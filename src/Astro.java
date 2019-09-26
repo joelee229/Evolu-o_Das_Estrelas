@@ -11,6 +11,7 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.SystemColor;
 
 public class Astro extends JFrame {
 
@@ -53,7 +54,7 @@ public class Astro extends JFrame {
 		contentPane.add(frase);
 		
 		JButton btnCliqueAqui = new JButton("Clique aqui");
-		btnCliqueAqui.setBackground(new Color(255, 204, 255));
+		btnCliqueAqui.setBackground(SystemColor.activeCaption);
 		btnCliqueAqui.setForeground(new Color(0, 0, 0));
 		btnCliqueAqui.setFont(new Font("Segoe Print", Font.BOLD, 18));
 		btnCliqueAqui.setBounds(285, 339, 267, 83);

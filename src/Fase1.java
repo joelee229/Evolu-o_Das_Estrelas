@@ -47,7 +47,7 @@ public class Fase1 extends JFrame {
 		contentPane.setLayout(null);
 		ImageIcon icon = new ImageIcon("images/NuvemGas.gif");
 		JLabel lblNewLabel = new JLabel(icon);
-		lblNewLabel.setBounds(5, 5, 658, 271);
+		lblNewLabel.setBounds(10, 0, 658, 271);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNuvemInterestelar = new JLabel("<html><body>Nuvem interestelar \u00E9 um nome dado a um acumulo de g\u00E1s, plasma e poeira da nossa e de outras gal\u00E1xias e dá origem às estrelas.");
@@ -56,9 +56,9 @@ public class Fase1 extends JFrame {
 		lblNuvemInterestelar.setBounds(121, 287, 456, 111);
 		contentPane.add(lblNuvemInterestelar);
 		ImageIcon next = new ImageIcon("images/next-2.png");
-		JButton button = new JButton(next);
+		JButton button = new JButton(new ImageIcon("images/arrow1.png"));
 		button.setBackground(Color.BLACK);
-		button.setBounds(566, 369, 92, 29);
+		button.setBounds(579, 319, 79, 79);
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FaseInter frame = new FaseInter();

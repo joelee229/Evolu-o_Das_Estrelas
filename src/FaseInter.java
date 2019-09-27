@@ -39,7 +39,7 @@ public class FaseInter extends JFrame {
 	public FaseInter() {
 		super("Fase intermediária");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 684, 448);
+		setBounds(100, 100, 684, 610);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -50,7 +50,7 @@ public class FaseInter extends JFrame {
 		btnNewButton.setBounds(34, 45, 256, 256);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Fase2Sol frame = new Fase2Sol();
+				RedGiant frame = new RedGiant();
 				frame.setVisible(true);
 				dispose();
 				
@@ -68,7 +68,7 @@ public class FaseInter extends JFrame {
 		btnNewButton_1.setBounds(379, 80, 256, 198);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Fase2Mass frame = new Fase2Mass();
+				RedSuper frame = new RedSuper();
 				frame.setVisible(true);
 				dispose();
 				//System.exit(DISPOSE_ON_CLOSE);

@@ -4,8 +4,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
-public class Fase2Sol extends JFrame {
+public class AnaWhi extends JFrame {
 
 	private JPanel contentPane;
 
@@ -16,7 +19,7 @@ public class Fase2Sol extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Fase2Sol frame = new Fase2Sol();
+					AnaWhi frame = new AnaWhi();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -28,14 +31,20 @@ public class Fase2Sol extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Fase2Sol() {
-		super("Sol");
+	public AnaWhi() {
+		super("Anã branca");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 562, 426);
 		contentPane = new JPanel();
+		contentPane.setBackground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon("C:\\Users\\07192837105\\eclipse-workspace\\Evolu-o_Das_Estrelas\\images\\Ana.gif"));
+		label.setBounds(10, 11, 311, 211);
+		contentPane.add(label);
 	}
 
 }

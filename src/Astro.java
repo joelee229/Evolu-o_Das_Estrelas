@@ -37,16 +37,15 @@ public class Astro extends JFrame {
 	 * Create the frame.
 	 */
 	public Astro() {
-		super("Astrofísica");
+		super("Astrofï¿½sica");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 907	, 500);
+		setBounds(100, 100, 891	, 481);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		ImageIcon back = new ImageIcon("images/nebulous-1.jpg");
-		
-		JLabel frase = new JLabel("<html><body>Bem vind@ ao mundo da astrof\u00EDsica,<br/> nessa jornada voc\u00EA ir\u00E1 ver a evolu\u00E7\u00E3o de uma estrela. <br/>E desmentir algumas proposi\u00E7\u00F5es.</body></html>");
+		ImageIcon back = new ImageIcon("Nebulous-1.jpg");
+		JLabel frase = new JLabel("<html><body>Bem vind@ ao mundo da astrof\u00EDsica, nessa jornada voc\u00EA ir\u00E1 ver a evolu\u00E7\u00E3o de uma estrela. E desmentir algumas proposi\u00E7\u00F5es.</body></html>");
 		frase.setForeground(Color.WHITE);
 		frase.setHorizontalAlignment(SwingConstants.LEFT);
 		frase.setFont(new Font("Segoe Print", Font.BOLD, 40));
@@ -55,7 +54,7 @@ public class Astro extends JFrame {
 		
 		JButton btnCliqueAqui = new JButton("Clique aqui");
 		btnCliqueAqui.setBackground(SystemColor.activeCaption);
-		btnCliqueAqui.setForeground(new Color(0, 0, 0));
+		btnCliqueAqui.setForeground(new Color(255, 255, 255));
 		btnCliqueAqui.setFont(new Font("Segoe Print", Font.BOLD, 18));
 		btnCliqueAqui.setBounds(285, 339, 267, 83);
 		btnCliqueAqui.addActionListener(new ActionListener() {
@@ -67,9 +66,8 @@ public class Astro extends JFrame {
 			}
 		});
 		contentPane.add(btnCliqueAqui);
-		JLabel lblNewLabel = new JLabel(back);
-		lblNewLabel.setBackground(new Color(240, 240, 240));
-		lblNewLabel.setFont(new Font("Segoe Print", Font.BOLD, 47));
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("images/Nebulous-1.jpg"));
 		lblNewLabel.setBounds(0, 0, 891, 461);
 		contentPane.add(lblNewLabel);
 		

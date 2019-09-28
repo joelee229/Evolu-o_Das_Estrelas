@@ -32,7 +32,7 @@ public class AnaWhi extends JFrame {
 	 * Create the frame.
 	 */
 	public AnaWhi() {
-		super("Anã branca");
+		super("Anï¿½ branca");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 562, 426);
 		contentPane = new JPanel();
@@ -42,7 +42,7 @@ public class AnaWhi extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\Users\\07192837105\\eclipse-workspace\\Evolu-o_Das_Estrelas\\images\\Ana.gif"));
+		label.setIcon(new ImageIcon("images/Ana.gif"));
 		label.setBounds(10, 11, 311, 211);
 		contentPane.add(label);
 	}

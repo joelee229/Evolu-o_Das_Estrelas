@@ -35,7 +35,7 @@ public class NebPlan extends JFrame {
 	 * Create the frame.
 	 */
 	public NebPlan() {
-		super("Nebulosa planetária");
+		super("Nebulosa planetï¿½ria");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 576, 464);
 		contentPane = new JPanel();
@@ -58,7 +58,7 @@ public class NebPlan extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\Users\\07192837105\\eclipse-workspace\\Evolu-o_Das_Estrelas\\images\\Neb.gif"));
+		label.setIcon(new ImageIcon("images/Neb.gif"));
 		label.setBounds(10, 11, 540, 304);
 		contentPane.add(label);
 	}
